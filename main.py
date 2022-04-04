@@ -1,3 +1,24 @@
+class EquationsSimulator:
+    @staticmethod
+    def N1(n1_prev, k1, v):
+        return n1_prev - k1 * n1_prev - v * n1_prev
+    @staticmethod
+    def N2(n1_prev, n2_prev, n5_prev, k1, k2, k5, k6):
+        return n2_prev + k1 * n1_prev - k2 * n2_prev + k5 * n5_prev - k6 * n2_prev
+    @staticmethod
+    def N3(n2_prev, n3_prev, n4_prev, k2, k3, k4):
+        return n3_prev + k2 * n2_prev - k3 * n3_prev + k4 * n4_prev
+    @staticmethod
+    def N4(n3_prev, n4_prev, k3, k4, k6):
+        return n4_prev - k4 * n4_prev + k3 * n3_prev - k6 * n4_prev
+    @staticmethod
+    def N5(n1_prev, n5_prev, k5, v):
+        return n5_prev + v * n1_prev - k5 * n5_prev
+    @staticmethod
+    def N6(n2_prev, n4_prev, n6_prev, k6):
+        return n6_prev + k6 * n2_prev + k6 * n4_prev
+
+
 class StatisticCalculator:
     def __init__(self):
         self.k1 = 0.2
