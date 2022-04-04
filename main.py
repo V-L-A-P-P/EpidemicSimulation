@@ -7,8 +7,17 @@ class StatisticCalculator:
         self.k5 = 0.2
         self.k6 = 0.2
         self.v = 0.2
+        
+    def set_coefficient(self):
+        self.k1 = int(input())
+        self.k2 = int(input())
+        self.k3 = int(input())
+        self.k4 = int(input())
+        self.k5 = int(input())
+        self.k6 = int(input())
+        self.v = int(input())
 
-    def n1(n1_prev, k1, v):
+    def n1(self, n1_prev, k1, v):
         return n1_prev - k1 * n1_prev - v * n1_prev
 
     def n2(self, n1_prev, n2_prev, n5_prev, k1, k2, k5, k6):
@@ -25,24 +34,14 @@ class StatisticCalculator:
 
     def n6(self, n2_prev, n4_prev, n6_prev, k6):
         return n6_prev + k6 * n2_prev + k6 * n4_prev
-
-    def set_coefficient(self):
-        self.k1 = int(input())
-        self.k2 = int(input())
-        self.k3 = int(input())
-        self.k4 = int(input())
-        self.k5 = int(input())
-        self.k6 = int(input())
-        self.v = int(input())
-
+        
     def calculate_disease_stat(self, number_of_people, number_of_days):
         n1 = number_of_people  # Незаболевшие, непривитые
-        n2 = 0  # Заболевшие впервые
-        n3 = 0  # Выздоровевшие
-        n4 = 0  # Повторно заболевшие
-        n5 = 0  # Вакцинировавшиеся
-        n6 = 0  # Умершие
-        v = 0
+        n2 = 0                 # Заболевшие впервые
+        n3 = 0                 # Выздоровевшие
+        n4 = 0                 # Повторно заболевшие
+        n5 = 0                 # Вакцинировавшиеся
+        n6 = 0                 # Умершие
         for i in range(number_of_days):
             self.print_interm_results(i, n1, n2, n3, n4, n5, n6)
             n1 = round(self.n1(n1, self.k1, self.v))
