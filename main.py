@@ -19,7 +19,7 @@ class EquationsSimulator:
         return n6_prev + k6 * n2_prev + k6 * n4_prev
 
 
-class StatisticCalculator:
+class StatisticCalculator:  # Класс принимающию на вход ко - ны.
     def __init__(self):
         self.k1 = 0.2
         self.k2 = 0.2
