@@ -9,7 +9,7 @@ class StatisticCalculator:
             'k6': 0.2,  #
             'v': 0.2    # коофицент вакцинировавшихся
         }
-        
+
     def set_coefs_dict(self):
         for key in self.coefs_dict:
             print('k1 : ', end='')
@@ -48,7 +48,7 @@ class StatisticCalculator:
         return n6_prev \
                + round(self.coefs_dict.get('k6') * n2_prev)\
                + round(self.coefs_dict.get('k6') * n4_prev)
-        
+
     def calculate_disease_stat(self, number_of_people, number_of_days):
         groups_of_people = {
             'n1': number_of_people,  # количество не привитых и не болевших людей
@@ -58,7 +58,7 @@ class StatisticCalculator:
             'n5': 0,                 # количество вакцинировавшихся людей
             'n6': 0,                 # количество умерших людей
         }
-        #self.set_coefs_dict()
+        # self.set_coefs_dict()
         for i in range(number_of_days):
             self.print_interm_results(i, groups_of_people.get('n1'),
                                       groups_of_people.get('n2'),
