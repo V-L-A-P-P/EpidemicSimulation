@@ -7,7 +7,7 @@ class StatisticCalculator:
             'k4': 0,  #
             'k5': 0,  #
             'k6': 0,  #
-            'v': 0    #
+            'v': 0    # коофицент вакцинировавшихся
         }
         
     def set_coefficient(self):
