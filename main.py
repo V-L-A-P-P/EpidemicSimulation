@@ -12,7 +12,7 @@ class StatisticCalculator:
 
     def set_coefs_dict(self):  # ввод коэффицентов через командную строку
         for key in self.coefs_dict:
-            print('k1 : ', end='')
+            print(f'{key} : ', end='')
             self.coefs_dict[key] = float(input())
 
     def n1(self, n1_prev):  # формула расчёта количества не болевших и не привитых людей
