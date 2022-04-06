@@ -1,50 +1,50 @@
 class StatisticCalculator:
     def __init__(self):
-        self.coefs_dict = {
-            'k1': 0.2,  #
-            'k2': 0.2,  #
-            'k3': 0.2,  #
-            'k4': 0.2,  #
-            'k5': 0.2,  #
-            'k6': 0.2,  #
-            'v': 0.2    # коофицент вакцинировавшихся
+        self.coefs_dict = {  # словарь коэффицентов
+            'k1': 0,  # доля не вакцинированных людей, заболевших впервые
+            'k2': 0,  # доля выздоровевших людей
+            'k3': 0,  # доля повторно заболевших людей
+            'k4': 0,  # доля выздоровевших людей после повторного заболевания
+            'k5': 0,  # доля вакцинированных людей, заболевших впервые
+            'k6': 0,  # доля умерших людей
+            'v': 0    # доля людей, которые прошли вакцинацию
         }
 
-    def set_coefs_dict(self):
+    def set_coefs_dict(self):  # ввод коэффицентов через командную строку
         for key in self.coefs_dict:
             print('k1 : ', end='')
             self.coefs_dict[key] = float(input())
 
-    def n1(self, n1_prev):
+    def n1(self, n1_prev):  # формула расчёта количества не болевших и не привитых людей
         return n1_prev \
                - round(self.coefs_dict.get('k1') * n1_prev)\
                - round(self.coefs_dict.get('v') * n1_prev)
 
-    def n2(self, n1_prev, n2_prev, n5_prev):
+    def n2(self, n1_prev, n2_prev, n5_prev):  # формула расчёта количества заболевших впервые людей
         return n2_prev \
                + round(self.coefs_dict.get('k1') * n1_prev) \
                - round(self.coefs_dict.get('k2') * n2_prev) \
                + round(self.coefs_dict.get('k5') * n5_prev)\
                - round(self.coefs_dict.get('k6') * n2_prev)
 
-    def n3(self, n2_prev, n3_prev, n4_prev):
+    def n3(self, n2_prev, n3_prev, n4_prev):  # формула расчёта количества выздоровевших людей
         return n3_prev \
                + round(self.coefs_dict.get('k2') * n2_prev)\
                - round(self.coefs_dict.get('k3') * n3_prev)\
                + round(self.coefs_dict.get('k4') * n4_prev)
 
-    def n4(self, n3_prev, n4_prev):
+    def n4(self, n3_prev, n4_prev):  # формула расчёта количества повторно заболевших людей
         return n4_prev \
                - round(self.coefs_dict.get('k4') * n4_prev)\
                + round(self.coefs_dict.get('k3') * n3_prev)\
                - round(self.coefs_dict.get('k6') * n4_prev)
 
-    def n5(self, n1_prev, n5_prev):
+    def n5(self, n1_prev, n5_prev):  # формула расчёта количества вакцинировавшихся людей
         return n5_prev \
                + round(self.coefs_dict.get('v') * n1_prev)\
                - round(self.coefs_dict.get('k5') * n5_prev)
 
-    def n6(self, n2_prev, n4_prev, n6_prev):
+    def n6(self, n2_prev, n4_prev, n6_prev):  # формула расчёта количества умерших людей
         return n6_prev \
                + round(self.coefs_dict.get('k6') * n2_prev)\
                + round(self.coefs_dict.get('k6') * n4_prev)
@@ -79,7 +79,7 @@ class StatisticCalculator:
                 groups_of_people[key] = new_n_list[k]
                 k += 1
 
-    def print_interm_results(self, day, n1, n2, n3, n4, n5, n6):
+    def print_interm_results(self, day, n1, n2, n3, n4, n5, n6):  # вывод количества людей всех групп + проверка
         print(day)
         print(f'n1 : {n1}')
         print(f'n2 : {n2}')
