@@ -14,8 +14,7 @@
    <string>Epidemic Simulator</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 rgba(0, 43, 100, 255), stop:1 rgba(255, 255, 255, 255));
-background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(0, 12, 131, 255), stop:1 rgba(15, 138, 140, 255));</string>
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 rgba(0, 43, 100, 255), stop:1 rgba(255, 255, 255, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="k1">
@@ -56,21 +55,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>710</x>
       <y>10</y>
-      <width>141</width>
-      <height>30</height>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -120,8 +123,8 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>710</x>
       <y>70</y>
-      <width>141</width>
-      <height>30</height>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -316,21 +319,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>710</x>
       <y>130</y>
-      <width>141</width>
-      <height>30</height>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -347,21 +354,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>710</x>
       <y>190</y>
-      <width>141</width>
-      <height>30</height>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -378,21 +389,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>710</x>
       <y>250</y>
-      <width>141</width>
-      <height>30</height>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -409,21 +424,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>710</x>
       <y>310</y>
-      <width>141</width>
-      <height>30</height>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -440,21 +459,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>710</x>
       <y>370</y>
-      <width>141</width>
-      <height>30</height>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -570,21 +593,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>70</x>
       <y>360</y>
-      <width>141</width>
+      <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -601,21 +628,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>70</x>
       <y>290</y>
-      <width>141</width>
+      <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -665,21 +696,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>70</x>
       <y>10</y>
-      <width>141</width>
+      <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -696,21 +731,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>70</x>
       <y>80</y>
-      <width>141</width>
+      <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -727,21 +766,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>70</x>
       <y>220</y>
-      <width>141</width>
+      <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -791,21 +834,25 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
      <rect>
       <x>70</x>
       <y>150</y>
-      <width>141</width>
+      <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -853,14 +900,15 @@ background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgb
    <widget class="QLabel" name="discribe_n1">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>230</x>
       <y>20</y>
-      <width>151</width>
+      <width>271</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
 background-color: rgb(85, 85, 255);</string>
     </property>
     <property name="text">
@@ -870,14 +918,15 @@ background-color: rgb(85, 85, 255);</string>
    <widget class="QLabel" name="discribe_n2">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>230</x>
       <y>90</y>
-      <width>151</width>
+      <width>271</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 85, 255);</string>
+     <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(0, 255, 255);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболело впервые&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -886,30 +935,32 @@ background-color: rgb(85, 85, 255);</string>
    <widget class="QLabel" name="discribe_n3">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>230</x>
       <y>160</y>
-      <width>151</width>
+      <width>271</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 85, 255);</string>
+     <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(0, 255, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;выздоровило&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;выздоровело&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="discribe_n4">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>230</x>
       <y>230</y>
-      <width>151</width>
+      <width>271</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 85, 255);</string>
+     <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(0, 255, 255);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболело повторно&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -918,14 +969,15 @@ background-color: rgb(85, 85, 255);</string>
    <widget class="QLabel" name="discribe_n5">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>230</x>
       <y>300</y>
-      <width>151</width>
+      <width>271</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 85, 255);</string>
+     <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(0, 255, 255);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;вакцинировалось&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -934,14 +986,15 @@ background-color: rgb(85, 85, 255);</string>
    <widget class="QLabel" name="discribe_n6">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>230</x>
       <y>370</y>
-      <width>151</width>
+      <width>271</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 85, 255);</string>
+     <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(0, 255, 255);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;умерло&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -979,7 +1032,7 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string>Start</string>
+     <string>START</string>
     </property>
     <property name="autoDefault">
      <bool>false</bool>
