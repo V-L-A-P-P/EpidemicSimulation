@@ -17,7 +17,7 @@
    <string notr="true">background-color: rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="k1">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -81,7 +81,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="background">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -90,6 +90,9 @@
       <height>711</height>
      </rect>
     </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: qlineargradient(spread:pad, x1:0.977, y1:0.017, x2:0.0113636, y2:1, stop:0 rgba(0, 4, 50, 255), stop:1 rgba(6, 53, 54, 255));</string>
     </property>
@@ -97,7 +100,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="k2">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -161,7 +164,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="k3">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -194,7 +197,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="k4">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -227,7 +230,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="k5">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -260,7 +263,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="k6">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -293,7 +296,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="kV">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -481,7 +484,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="n4">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -514,7 +517,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
+   <widget class="QLabel" name="n1">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -547,7 +550,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_13">
+   <widget class="QLabel" name="n3">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -642,7 +645,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_15">
+   <widget class="QLabel" name="n2">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -768,7 +771,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_16">
+   <widget class="QLabel" name="n6">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -832,7 +835,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_17">
+   <widget class="QLabel" name="n5">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -865,7 +868,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="discribe_n1">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -875,16 +878,14 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 85, 255);
-border-style: solid;
-border-width: 2ptx;
-border-color: rgb(255, 255, 255)</string>
+     <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 85, 255);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;общее кол - во людей&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="discribe_n2">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -900,7 +901,7 @@ border-color: rgb(255, 255, 255)</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболели впервые&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_14">
+   <widget class="QLabel" name="discribe_n3">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -916,7 +917,7 @@ border-color: rgb(255, 255, 255)</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;выздоровили&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_18">
+   <widget class="QLabel" name="discribe_n4">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -932,7 +933,7 @@ border-color: rgb(255, 255, 255)</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболели повторно&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_19">
+   <widget class="QLabel" name="discribe_n5">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -948,7 +949,7 @@ border-color: rgb(255, 255, 255)</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;вакцинировались&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_20">
+   <widget class="QLabel" name="discribe_n6">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -967,62 +968,73 @@ border-color: rgb(255, 255, 255)</string>
    <widget class="QPushButton" name="start_botton">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>430</y>
-      <width>206</width>
-      <height>206</height>
+      <x>320</x>
+      <y>420</y>
+      <width>221</width>
+      <height>101</height>
      </rect>
     </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: white;
-background-color: rgb(85, 85, 255);
-font: 20pt &quot;MS Shell Dlg 2&quot;;
- border-style: solid;
- border-width:3px;
- border-radius:50px;
- border-color: rgb(0, 0, 0);
- max-width:200px;
- max-height:200px;
- min-width:200px;
- min-height:200px;</string>
+     <string notr="true">QPushButton {
+	background-color: rgb(85, 85, 255);
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+	border:None;
+	padding-top: 5px;
+    color: rgb(255, 255, 255);
+	border-radius:10px;
+}
+
+QPushButton:hover {
+	background-color:rgb(78, 78, 236);
+}
+
+QPushButton:pressed {
+	background-color: rgb(70, 70, 211);
+}</string>
     </property>
     <property name="text">
      <string>Start</string>
     </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
    </widget>
-   <zorder>label_2</zorder>
-   <zorder>label</zorder>
+   <zorder>background</zorder>
+   <zorder>k1</zorder>
    <zorder>k1_input</zorder>
-   <zorder>label_3</zorder>
+   <zorder>k2</zorder>
    <zorder>k2_input</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_8</zorder>
+   <zorder>k3</zorder>
+   <zorder>k4</zorder>
+   <zorder>k5</zorder>
+   <zorder>k6</zorder>
+   <zorder>kV</zorder>
    <zorder>k3_input</zorder>
    <zorder>k4_input</zorder>
    <zorder>k5_input</zorder>
    <zorder>k6_input</zorder>
    <zorder>v_input</zorder>
-   <zorder>label_10</zorder>
-   <zorder>label_11</zorder>
-   <zorder>label_13</zorder>
+   <zorder>n4</zorder>
+   <zorder>n1</zorder>
+   <zorder>n3</zorder>
    <zorder>n6_input</zorder>
    <zorder>n5_input</zorder>
-   <zorder>label_15</zorder>
+   <zorder>n2</zorder>
    <zorder>n1_input</zorder>
    <zorder>n2_input</zorder>
    <zorder>n4_input</zorder>
-   <zorder>label_16</zorder>
+   <zorder>n6</zorder>
    <zorder>n3_input</zorder>
-   <zorder>label_17</zorder>
-   <zorder>label_9</zorder>
-   <zorder>label_12</zorder>
-   <zorder>label_14</zorder>
-   <zorder>label_18</zorder>
-   <zorder>label_19</zorder>
-   <zorder>label_20</zorder>
+   <zorder>n5</zorder>
+   <zorder>discribe_n1</zorder>
+   <zorder>discribe_n2</zorder>
+   <zorder>discribe_n3</zorder>
+   <zorder>discribe_n4</zorder>
+   <zorder>discribe_n5</zorder>
+   <zorder>discribe_n6</zorder>
    <zorder>start_botton</zorder>
   </widget>
  </widget>
