@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>869</width>
-    <height>697</height>
+    <width>870</width>
+    <height>739</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Epidemic Simulator</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 0, 0);</string>
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 rgba(0, 43, 100, 255), stop:1 rgba(255, 255, 255, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="k1">
@@ -79,25 +79,6 @@
     </property>
     <property name="frame">
      <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="background">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>871</width>
-      <height>711</height>
-     </rect>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.977, y1:0.017, x2:0.0113636, y2:1, stop:0 rgba(0, 4, 50, 255), stop:1 rgba(6, 53, 54, 255));</string>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="k2">
@@ -488,7 +469,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>190</y>
+      <y>220</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -554,7 +535,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>130</y>
+      <y>150</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -587,7 +568,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>310</y>
+      <y>360</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -618,7 +599,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>250</y>
+      <y>290</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -649,7 +630,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>70</y>
+      <y>80</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -713,7 +694,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>70</y>
+      <y>80</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -744,7 +725,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>190</y>
+      <y>220</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -775,7 +756,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>310</y>
+      <y>360</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -808,7 +789,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>130</y>
+      <y>150</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -839,7 +820,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>250</y>
+      <y>290</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -882,14 +863,14 @@
 background-color: rgb(85, 85, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;общее кол - во людей&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;общее кол-во людей&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="discribe_n2">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>80</y>
+      <y>90</y>
       <width>151</width>
       <height>20</height>
      </rect>
@@ -898,14 +879,14 @@ background-color: rgb(85, 85, 255);</string>
      <string notr="true">background-color: rgb(85, 85, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболели впервые&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболело впервые&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="discribe_n3">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>140</y>
+      <y>160</y>
       <width>151</width>
       <height>20</height>
      </rect>
@@ -914,14 +895,14 @@ background-color: rgb(85, 85, 255);</string>
      <string notr="true">background-color: rgb(85, 85, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;выздоровили&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;выздоровило&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="discribe_n4">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>200</y>
+      <y>230</y>
       <width>151</width>
       <height>20</height>
      </rect>
@@ -930,14 +911,14 @@ background-color: rgb(85, 85, 255);</string>
      <string notr="true">background-color: rgb(85, 85, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболели повторно&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболело повторно&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="discribe_n5">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>260</y>
+      <y>300</y>
       <width>151</width>
       <height>20</height>
      </rect>
@@ -946,14 +927,14 @@ background-color: rgb(85, 85, 255);</string>
      <string notr="true">background-color: rgb(85, 85, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;вакцинировались&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;вакцинировалось&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="discribe_n6">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>320</y>
+      <y>370</y>
       <width>151</width>
       <height>20</height>
      </rect>
@@ -962,14 +943,14 @@ background-color: rgb(85, 85, 255);</string>
      <string notr="true">background-color: rgb(85, 85, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;умерли&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;умерло&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="start_botton">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>420</y>
+      <x>340</x>
+      <y>490</y>
       <width>221</width>
       <height>101</height>
      </rect>
@@ -980,6 +961,7 @@ background-color: rgb(85, 85, 255);</string>
     <property name="styleSheet">
      <string notr="true">QPushButton {
 	background-color: rgb(85, 85, 255);
+	font: 8pt &quot;MS Shell Dlg 2&quot;;
 	font: 20pt &quot;MS Shell Dlg 2&quot;;
 	border:None;
 	padding-top: 5px;
@@ -1002,40 +984,6 @@ QPushButton:pressed {
      <bool>false</bool>
     </property>
    </widget>
-   <zorder>background</zorder>
-   <zorder>k1</zorder>
-   <zorder>k1_input</zorder>
-   <zorder>k2</zorder>
-   <zorder>k2_input</zorder>
-   <zorder>k3</zorder>
-   <zorder>k4</zorder>
-   <zorder>k5</zorder>
-   <zorder>k6</zorder>
-   <zorder>kV</zorder>
-   <zorder>k3_input</zorder>
-   <zorder>k4_input</zorder>
-   <zorder>k5_input</zorder>
-   <zorder>k6_input</zorder>
-   <zorder>v_input</zorder>
-   <zorder>n4</zorder>
-   <zorder>n1</zorder>
-   <zorder>n3</zorder>
-   <zorder>n6_input</zorder>
-   <zorder>n5_input</zorder>
-   <zorder>n2</zorder>
-   <zorder>n1_input</zorder>
-   <zorder>n2_input</zorder>
-   <zorder>n4_input</zorder>
-   <zorder>n6</zorder>
-   <zorder>n3_input</zorder>
-   <zorder>n5</zorder>
-   <zorder>discribe_n1</zorder>
-   <zorder>discribe_n2</zorder>
-   <zorder>discribe_n3</zorder>
-   <zorder>discribe_n4</zorder>
-   <zorder>discribe_n5</zorder>
-   <zorder>discribe_n6</zorder>
-   <zorder>start_botton</zorder>
   </widget>
  </widget>
  <resources/>
