@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>870</width>
-    <height>739</height>
+    <height>740</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -72,10 +72,13 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius: 5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -142,10 +145,13 @@ border-radius: 5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius: 5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -344,10 +350,13 @@ border-radius: 5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius: 5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -381,10 +390,13 @@ border-radius: 5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius: 5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -418,10 +430,13 @@ border-radius: 5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius: 5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -455,11 +470,13 @@ border-radius: 5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
+border: 1px solid rgb(255, 255, 255);
 border-radius: 5px
-</string>
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -493,10 +510,13 @@ border-radius: 5px
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius: 5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -629,10 +649,13 @@ border-radius: 5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius: 5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -666,10 +689,13 @@ border-radius: 5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius:5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -736,19 +762,19 @@ border-radius:5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius:5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="maxLength">
      <number>12</number>
-    </property>
-    <property name="frame">
-     <bool>true</bool>
     </property>
     <property name="cursorPosition">
      <number>0</number>
@@ -776,11 +802,13 @@ border-radius:5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border:None;
-border-radius:5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -814,10 +842,13 @@ border-radius:5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius:5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -884,10 +915,13 @@ border-radius:5px</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+     <string notr="true">QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 255, 255);
-border-radius:5px</string>
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px
+}</string>
     </property>
     <property name="text">
      <string/>
