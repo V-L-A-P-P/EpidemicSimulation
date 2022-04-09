@@ -14,7 +14,7 @@
    <string>Epidemic Simulator</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 rgba(0, 43, 100, 255), stop:1 rgba(255, 255, 255, 255));</string>
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(15, 0, 34, 255), stop:1 rgba(6, 56, 57, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="k1">
@@ -53,16 +53,16 @@
    <widget class="QLineEdit" name="k1_input">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>700</x>
       <y>10</y>
-      <width>151</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -73,7 +73,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -121,9 +121,9 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLineEdit" name="k2_input">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>700</x>
       <y>70</y>
-      <width>151</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
@@ -317,16 +317,16 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLineEdit" name="k3_input">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>700</x>
       <y>130</y>
-      <width>151</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -337,7 +337,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -352,16 +352,16 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLineEdit" name="k4_input">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>700</x>
       <y>190</y>
-      <width>151</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -372,7 +372,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -387,16 +387,16 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLineEdit" name="k5_input">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>700</x>
       <y>250</y>
-      <width>151</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -407,7 +407,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -422,16 +422,16 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLineEdit" name="k6_input">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>700</x>
       <y>310</y>
-      <width>151</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -442,7 +442,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -457,16 +457,16 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLineEdit" name="v_input">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>700</x>
       <y>370</y>
-      <width>151</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -477,7 +477,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -493,7 +493,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>220</y>
+      <y>230</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -526,7 +526,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>20</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -559,7 +559,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>150</y>
+      <y>160</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -592,15 +592,15 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>360</y>
-      <width>151</width>
+      <y>370</y>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -611,7 +611,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -627,15 +627,15 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>290</y>
-      <width>151</width>
+      <y>300</y>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -646,7 +646,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -662,7 +662,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>80</y>
+      <y>90</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -695,15 +695,15 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>10</y>
-      <width>151</width>
+      <y>20</y>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -714,7 +714,9 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+color: rgb(167, 248, 255);
+border-color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -725,20 +727,23 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="frame">
      <bool>true</bool>
     </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
    </widget>
    <widget class="QLineEdit" name="n2_input">
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>80</y>
-      <width>151</width>
+      <y>90</y>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -749,7 +754,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -765,15 +770,15 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>220</y>
-      <width>151</width>
+      <y>230</y>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -784,7 +789,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -800,7 +805,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>360</y>
+      <y>370</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -833,15 +838,15 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>150</y>
-      <width>151</width>
+      <y>160</y>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Shell Dlg 2</family>
-      <pointsize>7</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -852,7 +857,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -868,7 +873,7 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>290</y>
+      <y>300</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -900,16 +905,17 @@ font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="discribe_n1">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>20</y>
-      <width>271</width>
+      <x>240</x>
+      <y>30</y>
+      <width>251</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(0, 255, 255);
-background-color: rgb(85, 85, 255);</string>
+color: rgb(180, 255, 249);
+background-color: rgb(85, 85, 255);
+border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;общее кол-во людей&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -918,15 +924,17 @@ background-color: rgb(85, 85, 255);</string>
    <widget class="QLabel" name="discribe_n2">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>90</y>
-      <width>271</width>
+      <x>240</x>
+      <y>100</y>
+      <width>251</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(85, 85, 255);
-color: rgb(0, 255, 255);</string>
+color: rgb(0, 255, 255);
+border-radius: 5px;
+color: rgb(180, 255, 249);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболело впервые&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -935,15 +943,17 @@ color: rgb(0, 255, 255);</string>
    <widget class="QLabel" name="discribe_n3">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>160</y>
-      <width>271</width>
-      <height>20</height>
+      <x>240</x>
+      <y>170</y>
+      <width>251</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(85, 85, 255);
-color: rgb(0, 255, 255);</string>
+color: rgb(0, 255, 255);
+border-radius: 5px;
+color: rgb(180, 255, 249);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;выздоровело&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -952,15 +962,17 @@ color: rgb(0, 255, 255);</string>
    <widget class="QLabel" name="discribe_n4">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>230</y>
-      <width>271</width>
+      <x>240</x>
+      <y>240</y>
+      <width>251</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(85, 85, 255);
-color: rgb(0, 255, 255);</string>
+color: rgb(0, 255, 255);
+border-radius: 5px;
+color: rgb(180, 255, 249);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;заболело повторно&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -969,15 +981,17 @@ color: rgb(0, 255, 255);</string>
    <widget class="QLabel" name="discribe_n5">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>300</y>
-      <width>271</width>
+      <x>240</x>
+      <y>310</y>
+      <width>251</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(85, 85, 255);
-color: rgb(0, 255, 255);</string>
+color: rgb(0, 255, 255);
+border-radius: 5px;
+color: rgb(180, 255, 249);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;вакцинировалось&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -986,15 +1000,17 @@ color: rgb(0, 255, 255);</string>
    <widget class="QLabel" name="discribe_n6">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>370</y>
-      <width>271</width>
+      <x>240</x>
+      <y>380</y>
+      <width>251</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(85, 85, 255);
-color: rgb(0, 255, 255);</string>
+color: rgb(0, 255, 255);
+border-radius: 5px;
+color: rgb(180, 255, 249);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;умерло&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1003,10 +1019,10 @@ color: rgb(0, 255, 255);</string>
    <widget class="QPushButton" name="start_botton">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>490</y>
+      <x>310</x>
+      <y>560</y>
       <width>221</width>
-      <height>101</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="mouseTracking">
@@ -1021,6 +1037,8 @@ color: rgb(0, 255, 255);</string>
 	padding-top: 5px;
     color: rgb(255, 255, 255);
 	border-radius:10px;
+
+	color: rgb(180, 255, 249);
 }
 
 QPushButton:hover {
