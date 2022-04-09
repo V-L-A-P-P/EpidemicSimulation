@@ -73,7 +73,9 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius: 5px</string>
     </property>
     <property name="text">
      <string/>
@@ -129,15 +131,21 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiLight</family>
-      <pointsize>16</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));</string>
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius: 5px</string>
     </property>
     <property name="text">
      <string/>
@@ -337,7 +345,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius: 5px</string>
     </property>
     <property name="text">
      <string/>
@@ -372,7 +382,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius: 5px</string>
     </property>
     <property name="text">
      <string/>
@@ -407,7 +419,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius: 5px</string>
     </property>
     <property name="text">
      <string/>
@@ -442,7 +456,10 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius: 5px
+</string>
     </property>
     <property name="text">
      <string/>
@@ -477,7 +494,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius: 5px</string>
     </property>
     <property name="text">
      <string/>
@@ -611,7 +630,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius: 5px</string>
     </property>
     <property name="text">
      <string/>
@@ -646,7 +667,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius:5px</string>
     </property>
     <property name="text">
      <string/>
@@ -714,9 +737,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-color: rgb(167, 248, 255);
-border-color: rgb(255, 255, 255);
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius:5px</string>
     </property>
     <property name="text">
      <string/>
@@ -754,7 +777,10 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border:None;
+border-radius:5px</string>
     </property>
     <property name="text">
      <string/>
@@ -789,7 +815,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius:5px</string>
     </property>
     <property name="text">
      <string/>
@@ -857,7 +885,9 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 255);
+border-radius:5px</string>
     </property>
     <property name="text">
      <string/>
