@@ -9,5 +9,5 @@ if __name__ == "__main__":
         myapp = MyWin.MyWin()
         myapp.show()
         sys.exit(app.exec_())
-    except:
+    except Exception as _ex:
         print(traceback.format_exc())

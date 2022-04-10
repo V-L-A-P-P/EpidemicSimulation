@@ -23,7 +23,10 @@ class MyWin(QtWidgets.QMainWindow):
     def start_btn_clicked(self):
         # print(float(self.ui.k1_input.text()))
         # GraphBuilder.GraphBuilder.build_animated_graph([0])
-        GraphBuilder.GraphBuilder.build_animated_graphs(
-            self.statistic_calculator.get_disease_stat_array([100000, 0, 0, 0, 0, 0], 300), 100, 300)
-        print(traceback.format_exc())
+        try:
+            GraphBuilder.GraphBuilder.build_animated_graphs(
+                self.statistic_calculator.get_disease_stat_array([100000, 0, 0, 0, 0, 0], 300), 100, 300)
+            print(traceback.format_exc())
+        except Exception as _ex:
+            print(traceback.format_exc())
         # self.ui.n1_input.setStyleSheet(self.styles_dict['error_input'])
