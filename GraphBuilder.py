@@ -20,8 +20,11 @@ class GraphBuilder:
             y_top_lim += ar[0]
         plt.xlim(x_left_lim, x_right_lim), plt.ylim(0, y_top_lim)
         points_list = list(range(0, points_num))
+        colors_list = ['red', 'blue', 'green', 'orange', 'purple', 'black']
+        color_num = 0
         for array in dots_array:
-            plt.plot(points_list, array, color="blue")
+            plt.plot(points_list, array, color=colors_list[color_num])
+            color_num += 1
 
         plt.ion()
         plt.show()
@@ -32,5 +35,8 @@ class GraphBuilder:
 
             plt.gcf().canvas.flush_events()
 
+        plt.xlim(0, points_num)
+        plt.draw()
+        plt.gcf().canvas.flush_events()
         plt.ioff()
         plt.show()
