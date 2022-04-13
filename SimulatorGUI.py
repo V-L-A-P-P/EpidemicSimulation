@@ -9,16 +9,13 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtGui import QDoubleValidator
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(870, 739)
-        MainWindow.setFixedSize(870, 739)
-        MainWindow.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 rgba(0, 43, 100, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(0, 12, 131, 255), stop:1 rgba(15, 138, 140, 255));")
+        MainWindow.resize(870, 670)
+        MainWindow.setStyleSheet("background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 115, 255), stop:0.721591 rgba(0, 85, 127, 255));")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.k1 = QtWidgets.QLabel(self.centralwidget)
@@ -34,15 +31,21 @@ class Ui_MainWindow(object):
         self.k1.setIndent(-1)
         self.k1.setObjectName("k1")
         self.k1_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.k1_input.setGeometry(QtCore.QRect(710, 10, 141, 30))
+        self.k1_input.setGeometry(QtCore.QRect(700, 10, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.k1_input.setFont(font)
-        self.only_float_validator = QDoubleValidator(0.0, 1.0, 11)
-        self.only_float_validator.setLocale(QtCore.QLocale("en_US"))
-        self.k1_input.setValidator(self.only_float_validator)
-        self.k1_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
+        self.k1_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
         self.k1_input.setText("")
         self.k1_input.setMaxLength(12)
         self.k1_input.setFrame(True)
@@ -60,12 +63,21 @@ class Ui_MainWindow(object):
         self.k2.setIndent(-1)
         self.k2.setObjectName("k2")
         self.k2_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.k2_input.setGeometry(QtCore.QRect(710, 70, 141, 30))
+        self.k2_input.setGeometry(QtCore.QRect(700, 70, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.k2_input.setFont(font)
-        self.k2_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
+        self.k2_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
         self.k2_input.setText("")
         self.k2_input.setMaxLength(12)
         self.k2_input.setFrame(True)
@@ -131,227 +143,304 @@ class Ui_MainWindow(object):
         self.kV.setIndent(-1)
         self.kV.setObjectName("kV")
         self.k3_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.k3_input.setGeometry(QtCore.QRect(710, 130, 141, 30))
+        self.k3_input.setGeometry(QtCore.QRect(700, 130, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.k3_input.setFont(font)
-        self.k3_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
+        self.k3_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
         self.k3_input.setText("")
         self.k3_input.setMaxLength(12)
         self.k3_input.setFrame(True)
         self.k3_input.setObjectName("k3_input")
         self.k4_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.k4_input.setGeometry(QtCore.QRect(710, 190, 141, 30))
+        self.k4_input.setGeometry(QtCore.QRect(700, 190, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.k4_input.setFont(font)
-        self.k4_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
+        self.k4_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
         self.k4_input.setText("")
         self.k4_input.setMaxLength(12)
         self.k4_input.setFrame(True)
         self.k4_input.setObjectName("k4_input")
         self.k5_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.k5_input.setGeometry(QtCore.QRect(710, 250, 141, 30))
+        self.k5_input.setGeometry(QtCore.QRect(700, 250, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.k5_input.setFont(font)
-        self.k5_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
+        self.k5_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
         self.k5_input.setText("")
         self.k5_input.setMaxLength(12)
         self.k5_input.setFrame(True)
         self.k5_input.setObjectName("k5_input")
         self.k6_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.k6_input.setGeometry(QtCore.QRect(710, 310, 141, 30))
+        self.k6_input.setGeometry(QtCore.QRect(700, 310, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.k6_input.setFont(font)
-        self.k6_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
+        self.k6_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
         self.k6_input.setText("")
         self.k6_input.setMaxLength(12)
         self.k6_input.setFrame(True)
         self.k6_input.setObjectName("k6_input")
-        self.v_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.v_input.setGeometry(QtCore.QRect(710, 370, 141, 30))
+        self.k7_input = QtWidgets.QLineEdit(self.centralwidget)
+        self.k7_input.setGeometry(QtCore.QRect(700, 370, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
-        self.v_input.setFont(font)
-        self.v_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
-        self.v_input.setText("")
-        self.v_input.setMaxLength(12)
-        self.v_input.setFrame(True)
-        self.v_input.setObjectName("v_input")
-        self.n4 = QtWidgets.QLabel(self.centralwidget)
-        self.n4.setGeometry(QtCore.QRect(10, 220, 61, 41))
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.k7_input.setFont(font)
+        self.k7_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
+        self.k7_input.setText("")
+        self.k7_input.setMaxLength(12)
+        self.k7_input.setFrame(True)
+        self.k7_input.setObjectName("k7_input")
+        self.s2 = QtWidgets.QLabel(self.centralwidget)
+        self.s2.setGeometry(QtCore.QRect(10, 230, 61, 41))
         font = QtGui.QFont()
         font.setFamily("Lucida Bright")
         font.setPointSize(18)
         font.setBold(False)
         font.setWeight(50)
-        self.n4.setFont(font)
-        self.n4.setToolTipDuration(-1)
-        self.n4.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
-        self.n4.setIndent(-1)
-        self.n4.setObjectName("n4")
-        self.n1 = QtWidgets.QLabel(self.centralwidget)
-        self.n1.setGeometry(QtCore.QRect(10, 10, 61, 41))
+        self.s2.setFont(font)
+        self.s2.setToolTipDuration(-1)
+        self.s2.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
+        self.s2.setIndent(-1)
+        self.s2.setObjectName("s2")
+        self.h1 = QtWidgets.QLabel(self.centralwidget)
+        self.h1.setGeometry(QtCore.QRect(10, 20, 61, 41))
         font = QtGui.QFont()
         font.setFamily("Lucida Bright")
         font.setPointSize(18)
         font.setBold(False)
         font.setWeight(50)
-        self.n1.setFont(font)
-        self.n1.setToolTipDuration(-1)
-        self.n1.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
-        self.n1.setIndent(-1)
-        self.n1.setObjectName("n1")
-        self.n3 = QtWidgets.QLabel(self.centralwidget)
-        self.n3.setGeometry(QtCore.QRect(10, 150, 61, 41))
+        self.h1.setFont(font)
+        self.h1.setToolTipDuration(-1)
+        self.h1.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
+        self.h1.setIndent(-1)
+        self.h1.setObjectName("h1")
+        self.s1 = QtWidgets.QLabel(self.centralwidget)
+        self.s1.setGeometry(QtCore.QRect(10, 160, 61, 41))
         font = QtGui.QFont()
         font.setFamily("Lucida Bright")
         font.setPointSize(18)
         font.setBold(False)
         font.setWeight(50)
-        self.n3.setFont(font)
-        self.n3.setToolTipDuration(-1)
-        self.n3.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
-        self.n3.setIndent(-1)
-        self.n3.setObjectName("n3")
-        self.n6_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.n6_input.setGeometry(QtCore.QRect(70, 360, 141, 41))
+        self.s1.setFont(font)
+        self.s1.setToolTipDuration(-1)
+        self.s1.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
+        self.s1.setIndent(-1)
+        self.s1.setObjectName("s1")
+        self.d_input = QtWidgets.QLineEdit(self.centralwidget)
+        self.d_input.setGeometry(QtCore.QRect(70, 300, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
-        self.n6_input.setFont(font)
-        self.n6_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
-        self.n6_input.setText("")
-        self.n6_input.setMaxLength(12)
-        self.n6_input.setFrame(True)
-        self.n6_input.setObjectName("n6_input")
-        self.n5_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.n5_input.setGeometry(QtCore.QRect(70, 290, 141, 41))
-        font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
-        self.n5_input.setFont(font)
-        self.n5_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
-        self.n5_input.setText("")
-        self.n5_input.setMaxLength(12)
-        self.n5_input.setFrame(True)
-        self.n5_input.setObjectName("n5_input")
-        self.n2 = QtWidgets.QLabel(self.centralwidget)
-        self.n2.setGeometry(QtCore.QRect(10, 80, 61, 41))
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.d_input.setFont(font)
+        self.d_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
+        self.d_input.setText("")
+        self.d_input.setMaxLength(12)
+        self.d_input.setFrame(True)
+        self.d_input.setObjectName("d_input")
+        self.h2 = QtWidgets.QLabel(self.centralwidget)
+        self.h2.setGeometry(QtCore.QRect(10, 90, 61, 41))
         font = QtGui.QFont()
         font.setFamily("Lucida Bright")
         font.setPointSize(18)
         font.setBold(False)
         font.setWeight(50)
-        self.n2.setFont(font)
-        self.n2.setToolTipDuration(-1)
-        self.n2.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
-        self.n2.setIndent(-1)
-        self.n2.setObjectName("n2")
-        self.n1_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.n1_input.setGeometry(QtCore.QRect(70, 10, 141, 41))
+        self.h2.setFont(font)
+        self.h2.setToolTipDuration(-1)
+        self.h2.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
+        self.h2.setIndent(-1)
+        self.h2.setObjectName("h2")
+        self.h1_input = QtWidgets.QLineEdit(self.centralwidget)
+        self.h1_input.setGeometry(QtCore.QRect(70, 20, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
-        self.n1_input.setFont(font)
-        self.n1_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
-        self.n1_input.setText("")
-        self.n1_input.setMaxLength(12)
-        self.n1_input.setFrame(True)
-        self.n1_input.setObjectName("n1_input")
-        self.n2_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.n2_input.setGeometry(QtCore.QRect(70, 80, 141, 41))
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.h1_input.setFont(font)
+        self.h1_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
+        self.h1_input.setText("")
+        self.h1_input.setMaxLength(12)
+        self.h1_input.setCursorPosition(0)
+        self.h1_input.setObjectName("h1_input")
+        self.h2_input = QtWidgets.QLineEdit(self.centralwidget)
+        self.h2_input.setGeometry(QtCore.QRect(70, 90, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
-        self.n2_input.setFont(font)
-        self.n2_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
-        self.n2_input.setText("")
-        self.n2_input.setMaxLength(12)
-        self.n2_input.setFrame(True)
-        self.n2_input.setObjectName("n2_input")
-        self.n4_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.n4_input.setGeometry(QtCore.QRect(70, 220, 141, 41))
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.h2_input.setFont(font)
+        self.h2_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
+        self.h2_input.setText("")
+        self.h2_input.setMaxLength(12)
+        self.h2_input.setFrame(True)
+        self.h2_input.setObjectName("h2_input")
+        self.s2_input = QtWidgets.QLineEdit(self.centralwidget)
+        self.s2_input.setGeometry(QtCore.QRect(70, 230, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
-        self.n4_input.setFont(font)
-        self.n4_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
-        self.n4_input.setText("")
-        self.n4_input.setMaxLength(12)
-        self.n4_input.setFrame(True)
-        self.n4_input.setObjectName("n4_input")
-        self.n6 = QtWidgets.QLabel(self.centralwidget)
-        self.n6.setGeometry(QtCore.QRect(10, 360, 61, 41))
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.s2_input.setFont(font)
+        self.s2_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
+        self.s2_input.setText("")
+        self.s2_input.setMaxLength(12)
+        self.s2_input.setFrame(True)
+        self.s2_input.setObjectName("s2_input")
+        self.s1_input = QtWidgets.QLineEdit(self.centralwidget)
+        self.s1_input.setGeometry(QtCore.QRect(70, 160, 161, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.s1_input.setFont(font)
+        self.s1_input.setStyleSheet("QLineEdit{\n"
+"background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 255, 255);\n"
+"border: 1px solid rgb(255, 255, 255);\n"
+"border-radius: 5px\n"
+"}")
+        self.s1_input.setText("")
+        self.s1_input.setMaxLength(12)
+        self.s1_input.setFrame(True)
+        self.s1_input.setObjectName("s1_input")
+        self.d_in = QtWidgets.QLabel(self.centralwidget)
+        self.d_in.setGeometry(QtCore.QRect(10, 300, 61, 41))
         font = QtGui.QFont()
         font.setFamily("Lucida Bright")
         font.setPointSize(18)
         font.setBold(False)
         font.setWeight(50)
-        self.n6.setFont(font)
-        self.n6.setToolTipDuration(-1)
-        self.n6.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
-        self.n6.setIndent(-1)
-        self.n6.setObjectName("n6")
-        self.n3_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.n3_input.setGeometry(QtCore.QRect(70, 150, 141, 41))
-        font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiLight")
-        font.setPointSize(16)
-        self.n3_input.setFont(font)
-        self.n3_input.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(7, 248, 240, 102), stop:1 rgba(27, 255, 255, 104));")
-        self.n3_input.setText("")
-        self.n3_input.setMaxLength(12)
-        self.n3_input.setFrame(True)
-        self.n3_input.setObjectName("n3_input")
-        self.n5 = QtWidgets.QLabel(self.centralwidget)
-        self.n5.setGeometry(QtCore.QRect(10, 290, 61, 41))
-        font = QtGui.QFont()
-        font.setFamily("Lucida Bright")
-        font.setPointSize(18)
-        font.setBold(False)
-        font.setWeight(50)
-        self.n5.setFont(font)
-        self.n5.setToolTipDuration(-1)
-        self.n5.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
-        self.n5.setIndent(-1)
-        self.n5.setObjectName("n5")
+        self.d_in.setFont(font)
+        self.d_in.setToolTipDuration(-1)
+        self.d_in.setStyleSheet("background-color: qradialgradient(spread:pad, cx:0.284, cy:0.551, radius:0.5, fx:0.307, fy:0.540045, stop:0 rgba(255, 162, 11, 0), stop:1 rgba(255, 255, 255, 0));")
+        self.d_in.setIndent(-1)
+        self.d_in.setObjectName("d_in")
         self.discribe_n1 = QtWidgets.QLabel(self.centralwidget)
-        self.discribe_n1.setGeometry(QtCore.QRect(220, 20, 151, 20))
+        self.discribe_n1.setGeometry(QtCore.QRect(240, 30, 251, 20))
         self.discribe_n1.setStyleSheet("font: 8pt \"MS Shell Dlg 2\";\n"
-"background-color: rgb(85, 85, 255);")
+"color: rgb(180, 255, 249);\n"
+"background-color: rgb(85, 85, 255);\n"
+"border-radius: 5px;")
         self.discribe_n1.setObjectName("discribe_n1")
         self.discribe_n2 = QtWidgets.QLabel(self.centralwidget)
-        self.discribe_n2.setGeometry(QtCore.QRect(220, 90, 151, 20))
-        self.discribe_n2.setStyleSheet("background-color: rgb(85, 85, 255);")
+        self.discribe_n2.setGeometry(QtCore.QRect(240, 100, 251, 20))
+        self.discribe_n2.setStyleSheet("background-color: rgb(85, 85, 255);\n"
+"color: rgb(0, 255, 255);\n"
+"border-radius: 5px;\n"
+"color: rgb(180, 255, 249);")
         self.discribe_n2.setObjectName("discribe_n2")
         self.discribe_n3 = QtWidgets.QLabel(self.centralwidget)
-        self.discribe_n3.setGeometry(QtCore.QRect(220, 160, 151, 20))
-        self.discribe_n3.setStyleSheet("background-color: rgb(85, 85, 255);")
+        self.discribe_n3.setGeometry(QtCore.QRect(240, 170, 251, 21))
+        self.discribe_n3.setStyleSheet("background-color: rgb(85, 85, 255);\n"
+"color: rgb(0, 255, 255);\n"
+"border-radius: 5px;\n"
+"color: rgb(180, 255, 249);")
         self.discribe_n3.setObjectName("discribe_n3")
         self.discribe_n4 = QtWidgets.QLabel(self.centralwidget)
-        self.discribe_n4.setGeometry(QtCore.QRect(220, 230, 151, 20))
-        self.discribe_n4.setStyleSheet("background-color: rgb(85, 85, 255);")
+        self.discribe_n4.setGeometry(QtCore.QRect(240, 240, 251, 20))
+        self.discribe_n4.setStyleSheet("background-color: rgb(85, 85, 255);\n"
+"color: rgb(0, 255, 255);\n"
+"border-radius: 5px;\n"
+"color: rgb(180, 255, 249);")
         self.discribe_n4.setObjectName("discribe_n4")
         self.discribe_n5 = QtWidgets.QLabel(self.centralwidget)
-        self.discribe_n5.setGeometry(QtCore.QRect(220, 300, 151, 20))
-        self.discribe_n5.setStyleSheet("background-color: rgb(85, 85, 255);")
+        self.discribe_n5.setGeometry(QtCore.QRect(240, 310, 251, 20))
+        self.discribe_n5.setStyleSheet("background-color: rgb(85, 85, 255);\n"
+"color: rgb(0, 255, 255);\n"
+"border-radius: 5px;\n"
+"color: rgb(180, 255, 249);")
         self.discribe_n5.setObjectName("discribe_n5")
-        self.discribe_n6 = QtWidgets.QLabel(self.centralwidget)
-        self.discribe_n6.setGeometry(QtCore.QRect(220, 370, 151, 20))
-        self.discribe_n6.setStyleSheet("background-color: rgb(85, 85, 255);")
-        self.discribe_n6.setObjectName("discribe_n6")
-        self.start_botton = QtWidgets.QPushButton(self.centralwidget)
-        self.start_botton.setGeometry(QtCore.QRect(340, 490, 221, 101))
-        self.start_botton.setMouseTracking(True)
-        self.start_botton.setStyleSheet("QPushButton {\n"
+        self.start_button = QtWidgets.QPushButton(self.centralwidget)
+        self.start_button.setGeometry(QtCore.QRect(310, 560, 221, 81))
+        self.start_button.setMouseTracking(True)
+        self.start_button.setStyleSheet("QPushButton {\n"
 "    background-color: rgb(85, 85, 255);\n"
 "    font: 8pt \"MS Shell Dlg 2\";\n"
 "    font: 20pt \"MS Shell Dlg 2\";\n"
@@ -359,6 +448,8 @@ class Ui_MainWindow(object):
 "    padding-top: 5px;\n"
 "    color: rgb(255, 255, 255);\n"
 "    border-radius:10px;\n"
+"\n"
+"    color: rgb(180, 255, 249);\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -368,8 +459,8 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: rgb(70, 70, 211);\n"
 "}")
-        self.start_botton.setAutoDefault(False)
-        self.start_botton.setObjectName("start_botton")
+        self.start_button.setAutoDefault(False)
+        self.start_button.setObjectName("start_button")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -386,31 +477,28 @@ class Ui_MainWindow(object):
         self.k4.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#18fff0;\">K4 : </span></p></body></html>"))
         self.k5.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#18fff0;\">K5 : </span></p></body></html>"))
         self.k6.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#18fff0;\">K6 : </span></p></body></html>"))
-        self.kV.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#18fff0;\">V : </span></p></body></html>"))
+        self.kV.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#18fff0;\">K7 : </span></p></body></html>"))
         self.k3_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
         self.k4_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
         self.k5_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
         self.k6_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.v_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.n4.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">N4 : </span></p></body></html>"))
-        self.n1.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">N1 : </span></p></body></html>"))
-        self.n3.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">N3 : </span></p></body></html>"))
-        self.n6_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.n5_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.n2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">N2 : </span></p></body></html>"))
-        self.n1_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.n2_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.n4_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.n6.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">N6 : </span></p></body></html>"))
-        self.n3_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.n5.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">N5 : </span></p></body></html>"))
-        self.discribe_n1.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">общее кол-во людей</span></p></body></html>"))
-        self.discribe_n2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">заболело впервые</span></p></body></html>"))
-        self.discribe_n3.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">выздоровило</span></p></body></html>"))
-        self.discribe_n4.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">заболело повторно</span></p></body></html>"))
-        self.discribe_n5.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">вакцинировалось</span></p></body></html>"))
-        self.discribe_n6.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">умерло</span></p></body></html>"))
-        self.start_botton.setText(_translate("MainWindow", "Start"))
+        self.k7_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
+        self.s2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">S2 : </span></p></body></html>"))
+        self.h1.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">H1 : </span></p></body></html>"))
+        self.s1.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">S1 : </span></p></body></html>"))
+        self.d_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
+        self.h2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">H2 : </span></p></body></html>"))
+        self.h1_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
+        self.h2_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
+        self.s2_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
+        self.s1_input.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
+        self.d_in.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#18fff0;\">D : </span></p></body></html>"))
+        self.discribe_n1.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:9pt;\">здоровые невакцинированные люди</span></p></body></html>"))
+        self.discribe_n2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:9pt;\">здоровые вакцинированые люди</span></p></body></html>"))
+        self.discribe_n3.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:9pt;\">болеющие невакцинированные люди</span></p></body></html>"))
+        self.discribe_n4.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:9pt;\">болеющие вакцинированные люди</span></p></body></html>"))
+        self.discribe_n5.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:9pt;\">умерло</span></p></body></html>"))
+        self.start_button.setText(_translate("MainWindow", "START"))
 
 
 if __name__ == "__main__":
