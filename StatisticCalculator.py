@@ -16,6 +16,9 @@ class StatisticCalculator:
             # Коэффицент перехода из группы "Больные вакцинированные" в группу "Умершие"
             'k7': 0.02
         }
+        self.people_groups_names_list = ['h1', 'h2', 's1', 's2', 'd']
+        self.coeffs_names_list = ['k1', 'k2', 'k3', 'k4', 'k5', 'k6', 'k7']
+
 
     def calculate_h1(self, h1_prev, s1_prev):  # формула расчёта количества не болевших и не привитых людей
         return h1_prev \

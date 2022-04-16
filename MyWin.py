@@ -16,17 +16,13 @@ class MyWin(QtWidgets.QMainWindow):
         self.ui = SimulatorGUI.Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.start_button.clicked.connect(self.start_btn_clicked)
-        '''
-        with open("styles_dict.json", "r") as read_file:
-            self.styles_dict = json.load(read_file)
-        '''
 
     def start_btn_clicked(self):
-        # print(float(self.ui.k1_input.text()))
-        # GraphBuilder.GraphBuilder.build_animated_graph([0])
         try:
-            if self.check_coef_input():
-                self.check_input_for_correct()
+            self.set_init_input_styles()
+            errors_coef_input_dict = self.check_coef_input()
+            errors_people_input_dict = self.check_people_input()
+            if not 1 in list(errors_coef_input_dict.values()) and not 1 in list(errors_people_input_dict.values()):
                 self.statistic_calculator.coeffs_dict['k1'] = float(self.ui.k1_input.text())
                 self.statistic_calculator.coeffs_dict['k2'] = float(self.ui.k2_input.text())
                 self.statistic_calculator.coeffs_dict['k3'] = float(self.ui.k3_input.text())
@@ -41,62 +37,125 @@ class MyWin(QtWidgets.QMainWindow):
                                                                       int(self.ui.s1_input.text()),
                                                                       int(self.ui.s2_input.text()),
                                                                       int(self.ui.d_input.text())], 300), 100, 300)
+            else:
+                self.mark_coef_input_error(errors_coef_input_dict)
+                print(errors_people_input_dict)
+                print(errors_coef_input_dict)
+                self.mark_people_input_error(errors_people_input_dict)
         except:
             print(traceback.format_exc())
         # self.ui.n1_input.setStyleSheet(self.styles_dict['error_input'])
 
+    def set_init_input_styles(self):
+        self.ui.k1_input.setStyleSheet(StylesGetter.StylesGetter.get_init_coef_input_style())
+        self.ui.k2_input.setStyleSheet(StylesGetter.StylesGetter.get_init_coef_input_style())
+        self.ui.k3_input.setStyleSheet(StylesGetter.StylesGetter.get_init_coef_input_style())
+        self.ui.k4_input.setStyleSheet(StylesGetter.StylesGetter.get_init_coef_input_style())
+        self.ui.k5_input.setStyleSheet(StylesGetter.StylesGetter.get_init_coef_input_style())
+        self.ui.k6_input.setStyleSheet(StylesGetter.StylesGetter.get_init_coef_input_style())
+        self.ui.k7_input.setStyleSheet(StylesGetter.StylesGetter.get_init_coef_input_style())
+
+        self.ui.h1_input.setStyleSheet((StylesGetter.StylesGetter.get_init_people_input_style()))
+        self.ui.h2_input.setStyleSheet((StylesGetter.StylesGetter.get_init_people_input_style()))
+        self.ui.s1_input.setStyleSheet((StylesGetter.StylesGetter.get_init_people_input_style()))
+        self.ui.s2_input.setStyleSheet((StylesGetter.StylesGetter.get_init_people_input_style()))
+        self.ui.d_input.setStyleSheet((StylesGetter.StylesGetter.get_init_people_input_style()))
+
     def check_coef_input(self):
-        is_correct = True
+        input_error_dict = {}
+        for coef_name in self.statistic_calculator.coeffs_names_list: input_error_dict[coef_name] = coef_name
         try:
             float(self.ui.k1_input.text())
-            self.ui.k1_input.setStyleSheet((StylesGetter.StylesGetter.get_init_coeff_style()))
+            input_error_dict[self.statistic_calculator.coeffs_names_list[0]] = 0
         except ValueError:
-            self.ui.k1_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coeff_style()))
-            is_correct = False
+            input_error_dict[self.statistic_calculator.coeffs_names_list[0]] = 1
         try:
             float(self.ui.k2_input.text())
-            self.ui.k2_input.setStyleSheet((StylesGetter.StylesGetter.get_init_coeff_style()))
+            input_error_dict[self.statistic_calculator.coeffs_names_list[1]] = 0
         except ValueError:
-            self.ui.k2_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coeff_style()))
-            is_correct = False
+            input_error_dict[self.statistic_calculator.coeffs_names_list[1]] = 1
         try:
             float(self.ui.k3_input.text())
-            self.ui.k3_input.setStyleSheet((StylesGetter.StylesGetter.get_init_coeff_style()))
+            input_error_dict[self.statistic_calculator.coeffs_names_list[2]] = 0
         except ValueError:
-            self.ui.k3_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coeff_style()))
-            is_correct = False
+            input_error_dict[self.statistic_calculator.coeffs_names_list[2]] = 1
         try:
             float(self.ui.k4_input.text())
-            self.ui.k4_input.setStyleSheet((StylesGetter.StylesGetter.get_init_coeff_style()))
+            input_error_dict[self.statistic_calculator.coeffs_names_list[3]] = 0
         except ValueError:
-            self.ui.k4_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coeff_style()))
-            is_correct = False
+            input_error_dict[self.statistic_calculator.coeffs_names_list[3]] = 1
         try:
             float(self.ui.k5_input.text())
-            self.ui.k5_input.setStyleSheet((StylesGetter.StylesGetter.get_init_coeff_style()))
+            input_error_dict[self.statistic_calculator.coeffs_names_list[4]] = 0
         except ValueError:
-            self.ui.k5_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coeff_style()))
-            is_correct = False
+            input_error_dict[self.statistic_calculator.coeffs_names_list[4]] = 1
         try:
             float(self.ui.k6_input.text())
-            self.ui.k6_input.setStyleSheet((StylesGetter.StylesGetter.get_init_coeff_style()))
+            input_error_dict[self.statistic_calculator.coeffs_names_list[5]] = 0
         except ValueError:
-            self.ui.k6_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coeff_style()))
-            is_correct = False
+            input_error_dict[self.statistic_calculator.coeffs_names_list[5]] = 1
         try:
             float(self.ui.k7_input.text())
-            self.ui.k7_input.setStyleSheet((StylesGetter.StylesGetter.get_init_coeff_style()))
+            input_error_dict[self.statistic_calculator.coeffs_names_list[6]] = 0
         except ValueError:
-            self.ui.k7_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coeff_style()))
-            is_correct = False
-        return is_correct
-    '''
+            input_error_dict[self.statistic_calculator.coeffs_names_list[6]] = 1
+        return input_error_dict
+
     def check_people_input(self):
-        is_correct = True
+        input_error_dict = {}
+        for coef_name in self.statistic_calculator.people_groups_names_list: input_error_dict[coef_name] = coef_name
         try:
             int(self.ui.h1_input.text())
-            self.ui.h1_input.setStyleSheet((StylesGetter.StylesGetter.get_init_coeff_style()))
+            input_error_dict[self.statistic_calculator.people_groups_names_list[0]] = 0
         except ValueError:
-            self.ui.k1_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coeff_style()))
-            is_correct = False
-    '''
+            input_error_dict[self.statistic_calculator.people_groups_names_list[0]] = 1
+        try:
+            int(self.ui.h2_input.text())
+            input_error_dict[self.statistic_calculator.people_groups_names_list[1]] = 0
+        except ValueError:
+            input_error_dict[self.statistic_calculator.people_groups_names_list[1]] = 1
+        try:
+            int(self.ui.s1_input.text())
+            input_error_dict[self.statistic_calculator.people_groups_names_list[2]] = 0
+        except ValueError:
+            input_error_dict[self.statistic_calculator.people_groups_names_list[2]] = 1
+        try:
+            int(self.ui.s2_input.text())
+            input_error_dict[self.statistic_calculator.people_groups_names_list[3]] = 0
+        except ValueError:
+            input_error_dict[self.statistic_calculator.people_groups_names_list[3]] = 1
+        try:
+            int(self.ui.d_input.text())
+            input_error_dict[self.statistic_calculator.people_groups_names_list[4]] = 0
+        except ValueError:
+            input_error_dict[self.statistic_calculator.people_groups_names_list[4]] = 1
+        return input_error_dict
+
+    def mark_coef_input_error(self, input_error_dict):
+        if input_error_dict[self.statistic_calculator.coeffs_names_list[0]] == 1:
+            self.ui.k1_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coef_input_style()))
+        if input_error_dict[self.statistic_calculator.coeffs_names_list[1]] == 1:
+            self.ui.k2_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coef_input_style()))
+        if input_error_dict[self.statistic_calculator.coeffs_names_list[2]] == 1:
+            self.ui.k3_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coef_input_style()))
+        if input_error_dict[self.statistic_calculator.coeffs_names_list[3]] == 1:
+            self.ui.k4_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coef_input_style()))
+        if input_error_dict[self.statistic_calculator.coeffs_names_list[4]] == 1:
+            self.ui.k5_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coef_input_style()))
+        if input_error_dict[self.statistic_calculator.coeffs_names_list[5]] == 1:
+            self.ui.k6_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coef_input_style()))
+        if input_error_dict[self.statistic_calculator.coeffs_names_list[6]] == 1:
+            self.ui.k7_input.setStyleSheet((StylesGetter.StylesGetter.get_error_coef_input_style()))
+
+    def mark_people_input_error(self, input_error_dict):
+        if input_error_dict[self.statistic_calculator.people_groups_names_list[0]] == 1:
+            self.ui.h1_input.setStyleSheet((StylesGetter.StylesGetter.get_error_people_input_style()))
+        if input_error_dict[self.statistic_calculator.people_groups_names_list[1]] == 1:
+            self.ui.h2_input.setStyleSheet((StylesGetter.StylesGetter.get_error_people_input_style()))
+        if input_error_dict[self.statistic_calculator.people_groups_names_list[2]] == 1:
+            self.ui.s1_input.setStyleSheet((StylesGetter.StylesGetter.get_error_people_input_style()))
+        if input_error_dict[self.statistic_calculator.people_groups_names_list[3]] == 1:
+            self.ui.s2_input.setStyleSheet((StylesGetter.StylesGetter.get_error_people_input_style()))
+        if input_error_dict[self.statistic_calculator.people_groups_names_list[4]] == 1:
+            self.ui.d_input.setStyleSheet((StylesGetter.StylesGetter.get_error_people_input_style()))
+
