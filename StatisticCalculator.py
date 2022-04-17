@@ -2,6 +2,14 @@ class StatisticCalculator:
     def __init__(self):
         self.people_groups_names_list = ['h1', 'h2', 's1', 's2', 'd']
         self.coeffs_names_list = ['k1', 'k2', 'k3', 'k4', 'k5', 'k6', 'k7']
+        self.groups_names_values_dict = {
+            self.people_groups_names_list[0] : 'Здоровые невакцинированные',
+            self.people_groups_names_list[1]: 'Здоровые вакцинированные',
+            self.people_groups_names_list[2]: 'Больные невакцинированные',
+            self.people_groups_names_list[3]: 'Больные вакцинированные',
+            self.people_groups_names_list[4]: 'Умершие'
+
+        }
         self.coeffs_dict = {  # словарь коэффицентов
             # Коэффицент перехода из группы "Здоровые невакцинированные" в группу "Больные невакцинированные"
             self.coeffs_names_list[0]: 0.02,
@@ -69,8 +77,18 @@ class StatisticCalculator:
             s1_new = round(self.calculate_s1(people_distr_dict['s1'], people_distr_dict['h1']))
             s2_new = round(self.calculate_s2(people_distr_dict['s2'], people_distr_dict['h2']))
             d_new = round(
-                self.calculate_d(people_distr_dict['d'], people_distr_dict['s1'], people_distr_dict['s1']))
+                self.calculate_d(people_distr_dict['d'], people_distr_dict['s1'], people_distr_dict['s2']))
             new_people_distr_list = [h1_new, h2_new, s1_new, s2_new, d_new]
+            print(day_num)
+            print(h1_new)
+            print(h2_new)
+            print(s1_new)
+            print(s2_new)
+            print(d_new)
+            print('---')
+            print(h1_new + h2_new + s1_new + s2_new + d_new)
+            print('---')
+
             k = 0
             for group_name in people_distr_dict:
                 people_distr_dict[group_name] = new_people_distr_list[k]

@@ -1,10 +1,7 @@
-import sys
 from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import *
 import SimulatorGUI
 import GraphBuilder
 import StatisticCalculator
-import json
 import traceback
 import StylesGetter
 import DataWorker
@@ -49,7 +46,8 @@ class MyWin(QtWidgets.QMainWindow):
                                                                           int(self.ui.h2_input.text()),
                                                                           int(self.ui.s1_input.text()),
                                                                           int(self.ui.s2_input.text()),
-                                                                          int(self.ui.d_input.text())], 300), 100, 300)
+                                                                          int(self.ui.d_input.text())], 600), 100, 600,
+                        list(self.statistic_calculator.groups_names_values_dict.values()))
                 else:
                     self.mark_coef_input_error(errors_coef_dict)
             else:
