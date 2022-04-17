@@ -1,24 +1,23 @@
 class StatisticCalculator:
     def __init__(self):
-        self.coeffs_dict = {  # словарь коэффицентов
-            # Коэффицент перехода из группы "Здоровые невакцинированные" в группу "Больные невакцинированные"
-            'k1': 0.02,
-            # Коэффицент перехода из группы "Больные невакцинированные" в группу "Здоровые невакцинированные"
-            'k2': 0.02,
-            # Коэффицент перехода из группы "Здоровые вакцинированные" в группу "Больные вакцинированные"
-            'k3': 0.02,
-            # Коэффицент перехода из группы "Больные вакцинированные" в группу "Здоровые вакцинированные"
-            'k4': 0.02,
-            # Коэффицент перехода из группы "Здоровые невакцинированные" в группу "Здоровые вакцинированные"
-            'k5': 0.02,
-            # Коэффицент перехода из группы "Больные невакцинированные" в группу "Умершие"
-            'k6': 0.02,
-            # Коэффицент перехода из группы "Больные вакцинированные" в группу "Умершие"
-            'k7': 0.02
-        }
         self.people_groups_names_list = ['h1', 'h2', 's1', 's2', 'd']
         self.coeffs_names_list = ['k1', 'k2', 'k3', 'k4', 'k5', 'k6', 'k7']
-
+        self.coeffs_dict = {  # словарь коэффицентов
+            # Коэффицент перехода из группы "Здоровые невакцинированные" в группу "Больные невакцинированные"
+            self.coeffs_names_list[0]: 0.02,
+            # Коэффицент перехода из группы "Больные невакцинированные" в группу "Здоровые невакцинированные"
+            self.coeffs_names_list[1]: 0.02,
+            # Коэффицент перехода из группы "Здоровые вакцинированные" в группу "Больные вакцинированные"
+            self.coeffs_names_list[2]: 0.02,
+            # Коэффицент перехода из группы "Больные вакцинированные" в группу "Здоровые вакцинированные"
+            self.coeffs_names_list[3]: 0.02,
+            # Коэффицент перехода из группы "Здоровые невакцинированные" в группу "Здоровые вакцинированные"
+            self.coeffs_names_list[4]: 0.02,
+            # Коэффицент перехода из группы "Больные невакцинированные" в группу "Умершие"
+            self.coeffs_names_list[5]: 0.02,
+            # Коэффицент перехода из группы "Больные вакцинированные" в группу "Умершие"
+            self.coeffs_names_list[6]: 0.02
+        }
 
     def calculate_h1(self, h1_prev, s1_prev):  # формула расчёта количества не болевших и не привитых людей
         return h1_prev \
@@ -56,11 +55,11 @@ class StatisticCalculator:
                             [people_distr_list[3]],
                             [people_distr_list[4]]]
         people_distr_dict = {
-            'h1': people_distr_list[0],  # количество непривитых здоровых
-            'h2': people_distr_list[1],  # количество привитых здоровых
-            's1': people_distr_list[2],  # количество непривитых больных
-            's2': people_distr_list[3],  # количество привитых больных
-            'd': people_distr_list[4],  # количество умерших людей
+            self.people_groups_names_list[0]: people_distr_list[0],  # количество непривитых здоровых
+            self.people_groups_names_list[1]: people_distr_list[1],  # количество привитых здоровых
+            self.people_groups_names_list[2]: people_distr_list[2],  # количество непривитых больных
+            self.people_groups_names_list[3]: people_distr_list[3],  # количество привитых больных
+            self.people_groups_names_list[4]: people_distr_list[4],  # количество умерших людей
         }
         for day_num in range(number_of_days - 1):
             h1_new = self.calculate_h1(people_distr_dict['h1'], people_distr_dict['s1'])
@@ -80,21 +79,20 @@ class StatisticCalculator:
                 dots_arrays_list[dots_array_num].append(new_people_distr_list[dots_array_num])
         return dots_arrays_list
 
-    def check_coeffs(self):
-        check_coeffs_dict = {}
+    def check_coeffs_correctness(self):
+        is_coeff_incor_dict = {}
         for coeff_name in self.coeffs_dict:
-            check_coeffs_dict[coeff_name] = True
+            is_coeff_incor_dict[coeff_name] = 0
 
         if self.coeffs_dict['k1'] + self.coeffs_dict['k5'] >= 1:
-            check_coeffs_dict['k1'] = False
-            check_coeffs_dict['k5'] = False
+            is_coeff_incor_dict['k1'] = 1
+            is_coeff_incor_dict['k5'] = 1
         if self.coeffs_dict['k2'] + self.coeffs_dict['k6'] >= 1:
-            check_coeffs_dict['k2'] = False
-            check_coeffs_dict['k6'] = False
+            is_coeff_incor_dict['k2'] = 1
+            is_coeff_incor_dict['k6'] = 1
         if self.coeffs_dict['k4'] + self.coeffs_dict['k7'] >= 1:
-            check_coeffs_dict['k4'] = False
-            check_coeffs_dict['k7'] = False
+            is_coeff_incor_dict['k4'] = 1
+            is_coeff_incor_dict['k7'] = 1
         if self.coeffs_dict['k3'] >= 1:
-            check_coeffs_dict['k3'] = False
-        return check_coeffs_dict
-
+            is_coeff_incor_dict['k3'] = 1
+        return is_coeff_incor_dict
