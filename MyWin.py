@@ -10,8 +10,8 @@ import DataWorker
 class MyWin(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         self.statistic_calculator = StatisticCalculator.StatisticCalculator()
-        print(DataWorker.DataWorker.load_coefs_dict())
-        self.statistic_calculator.coeffs_dict = DataWorker.DataWorker.load_coefs_dict()
+        print(DataWorker.load_coefs_dict())
+        self.statistic_calculator.coeffs_dict = DataWorker.load_coefs_dict()
         QtWidgets.QWidget.__init__(self, parent)
         self.ui = SimulatorGUI.Ui_MainWindow()
         self.ui.setupUi(self)
@@ -40,8 +40,8 @@ class MyWin(QtWidgets.QMainWindow):
                 self.statistic_calculator.coeffs_dict['k7'] = float(self.ui.k7_input.text())
                 errors_coef_dict = self.statistic_calculator.check_coeffs_correctness()
                 if not 1 in list(errors_coef_dict.values()):
-                    DataWorker.DataWorker.dump_coefs_dict(self.statistic_calculator.coeffs_dict)
-                    GraphBuilder.GraphBuilder.build_animated_graphs(
+                    DataWorker.dump_coefs_dict(self.statistic_calculator.coeffs_dict)
+                    GraphBuilder.build_animated_graphs(
                         self.statistic_calculator.get_disease_stat_array([int(self.ui.h1_input.text()),
                                                                           int(self.ui.h2_input.text()),
                                                                           int(self.ui.s1_input.text()),
