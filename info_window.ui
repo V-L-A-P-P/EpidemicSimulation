@@ -6,27 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>842</width>
+    <width>862</width>
     <height>241</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 85, 255)</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>-10</x>
      <y>0</y>
-     <width>851</width>
+     <width>871</width>
      <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 28pt &quot;MS Shell Dlg 2&quot;;
-color:rgb(255, 255, 128);
-background-color:rgb(0, 0, 127);
-border-radius: 5px;</string>
+    <string notr="true">QLabel {
+background-color: rgba(85, 85, 255, 0);
+font: 28pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(180, 255, 249);
+border-radius: 5px;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Правила пользования&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -35,17 +40,19 @@ border-radius: 5px;</string>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>20</x>
      <y>80</y>
-     <width>851</width>
+     <width>841</width>
      <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-color:rgb(255, 255, 128);
-background-color: rgb(0, 0, 127);
-border-radius: 5px;</string>
+    <string notr="true">QLabel {background-color: rgba(255, 85, 127, 0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(180, 255, 249);
+border-radius: 5px;
+}
+</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;1.Сумма некоторых коэфицентов должна быть меньше 1, но больше 0, а именно:&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;0 &amp;lt; k1 + k5 &amp;lt;1&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;0 &amp;lt; k2 + k6 &amp;lt;1&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;0 &amp;lt; k4 + k7 &amp;lt; 1&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;0 &amp;lt; k3 &amp;lt; 1&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -56,15 +63,17 @@ border-radius: 5px;</string>
     <rect>
      <x>-10</x>
      <y>190</y>
-     <width>861</width>
+     <width>871</width>
      <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-color:rgb(255, 255, 128);
-background-color:rgb(0, 0, 127);
-border-radius: 5px;</string>
+    <string notr="true">QLabel {background-color: rgba(255, 85, 127, 0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(180, 255, 249);
+border-radius: 5px;
+}
+</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;2.Все поля должны быть заполнены&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
