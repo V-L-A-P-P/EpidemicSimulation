@@ -5,6 +5,8 @@ import StatisticCalculator
 import traceback
 import StylesGetter
 import DataWorker
+import InfoWindow
+import sys
 
 
 class MyWin(QtWidgets.QMainWindow):
@@ -23,14 +25,17 @@ class MyWin(QtWidgets.QMainWindow):
         self.ui.k6_input.setText(str(self.statistic_calculator.coeffs_dict['k6']))
         self.ui.k7_input.setText(str(self.statistic_calculator.coeffs_dict['k7']))
         self.ui.start_button.clicked.connect(self.start_btn_clicked)
+        self.ui.info_button.clicked.connect(self.open_info_window)
 
     def start_btn_clicked(self):
         try:
+
             self.set_init_input_styles()
             errors_coef_input_dict = self.check_coef_input()
             errors_people_input_dict = self.check_people_input()
 
             if not 1 in (list(errors_coef_input_dict.values()) + list(errors_people_input_dict.values())):
+
                 self.statistic_calculator.coeffs_dict['k1'] = float(self.ui.k1_input.text())
                 self.statistic_calculator.coeffs_dict['k2'] = float(self.ui.k2_input.text())
                 self.statistic_calculator.coeffs_dict['k3'] = float(self.ui.k3_input.text())
@@ -50,9 +55,11 @@ class MyWin(QtWidgets.QMainWindow):
                         list(self.statistic_calculator.groups_names_values_dict.values()))
                 else:
                     self.mark_coef_input_error(errors_coef_dict)
+                    self.open_info_window()
             else:
                 self.mark_coef_input_error(errors_coef_input_dict)
                 self.mark_people_input_error(errors_people_input_dict)
+                self.open_info_window()
         except:
             print(traceback.format_exc())
         # self.ui.n1_input.setStyleSheet(self.styles_dict['error_input'])
@@ -171,3 +178,7 @@ class MyWin(QtWidgets.QMainWindow):
             self.ui.s2_input.setStyleSheet((StylesGetter.StylesGetter.get_error_people_input_style()))
         if input_error_dict[self.statistic_calculator.people_groups_names_list[4]] == 1:
             self.ui.d_input.setStyleSheet((StylesGetter.StylesGetter.get_error_people_input_style()))
+
+    def open_info_window(self):
+        info_win = InfoWindow.InfoWin(self)
+        info_win.show()
